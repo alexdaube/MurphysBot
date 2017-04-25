@@ -1,0 +1,90 @@
+{
+  "from_list": [
+    {
+      "descriptor_points": [
+        {
+          "x": 570,
+          "y": 414
+        },
+        {
+          "x": 613,
+          "y": 413
+        },
+        {
+          "x": 614,
+          "y": 457
+        },
+        {
+          "x": 574,
+          "y": 457
+        }
+      ],
+      "form_color": "Rouge",
+      "form_descriptor_point_amount": 4,
+      "form_type": "Carre"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 850,
+          "y": 512
+        },
+        {
+          "x": 849,
+          "y": 458
+        },
+        {
+          "x": 804,
+          "y": 483
+        }
+      ],
+      "form_color": "Rouge",
+      "form_descriptor_point_amount": 3,
+      "form_type": "Triangle"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 592,
+          "y": 353
+        },
+        {
+          "x": 621,
+          "y": 337
+        },
+        {
+          "x": 618,
+          "y": 306
+        },
+        {
+          "x": 585,
+          "y": 298
+        },
+        {
+          "x": 570,
+          "y": 329
+        }
+      ],
+      "form_color": "Rouge",
+      "form_descriptor_point_amount": 5,
+      "form_type": "Pentagone"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 696,
+          "y": 267
+        },
+        {
+          "x": 746,
+          "y": 266
+        }
+      ],
+      "form_color": "Rouge",
+      "form_descriptor_point_amount": 2,
+      "form_type": "Cercle"
+    }
+  ],
+  "robot_orientation": null,
+  "robot_position": null
+}

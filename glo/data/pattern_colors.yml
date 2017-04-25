@@ -1,0 +1,24 @@
+teal:
+  h: 185
+  s: 100
+  v: 100
+green:
+  h: 97
+  s: 65
+  v: 60
+magenta:
+  h: 323
+  s: 100
+  v: 100
+blue:
+  h: 220
+  s: 48
+  v: 56
+orange:
+  h: 15
+  s: 100
+  v: 100
+purple:
+  h: 295
+  s: 42
+  v: 44

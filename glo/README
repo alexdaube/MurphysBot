@@ -1,0 +1,19 @@
+# Dependencies
+Python 2.7.*
+QT4
+OpenCV 3.*
+Shapely
+Flask 0.10.1
+werkzeug
+requests 2.9.1
+PyYAML
+testfixtures-4.9.1
+pySerial 3.0.1
+statistics
+shapely
+
+# Rouler les tests
+1. Exécuter la commande 'python -m unittest discover' dans la racine du projet (même dossier que ce README)
+2. Lancer le projet dans Pycharm, clic-droit sur la racine, cliquer sur la commande 'Run Unittests in glo'
+
+Les fichiers main sont situés dans la racine du projet. 'base_main.py' et 'robot_main.py'

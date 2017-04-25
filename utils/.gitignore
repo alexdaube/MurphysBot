@@ -1,0 +1,13 @@
+#Mac shits
+.DS_Store
+
+# pycharm
+.idea/
+*.iml
+*.iws
+*.ipr
+/out/
+
+# compiled pychon and cache
+*.pyc
+__pycache__/

@@ -1,0 +1,13 @@
+[Unit]
+SourcePath=/etc/init.d/lanch_robot
+Description=Robot main code
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/etc/init.d/lanch_robot start
+ExecStop=/etc/init.d/lanch_robot stop
+ExecReload=/etc/init.d/lanch_robot restart
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,29 @@
+{
+  "from_list": [
+    {
+      "descriptor_points": [
+        {
+          "x": 324, 
+          "y": 273
+        }, 
+        {
+          "x": 340, 
+          "y": 271
+        }, 
+        {
+          "x": 339, 
+          "y": 284
+        }, 
+        {
+          "x": 326, 
+          "y": 287
+        }
+      ], 
+      "form_color": "Jaune", 
+      "form_descriptor_point_amount": 4, 
+      "form_type": "Carre"
+    }
+  ], 
+  "robot_orientation": null, 
+  "robot_position": null
+}

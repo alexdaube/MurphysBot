@@ -1,0 +1,264 @@
+%!TEX encoding = IsoLatin
+
+%
+% Section "Tableau des critÃ¨res" (en commun)
+%
+
+%\begin{table}[ht]
+%\centering
+%\caption{Synthèse du cahier des charges}
+\label{t:usecase}
+%\resizebox{\textwidth}{!}{%
+\begin{center}
+    \begin{tabular}{ | p{4cm} | p{11cm}| }
+    \hline
+   \textbf{Cas d'utilisation:} & Visualiser les données du robot en temps réel  \\ \hline
+   \textbf{Système:}  & Pirate des Caraïbes: Équipe 2\\ \hline
+   \textbf{Acteur(s):} & Opérateur  \\ \hline
+    \textbf{Parties prenantes et intérêts:} &  Opérateur: Il doit etre en mesure de visualiser les données du robot en temps réel. \\ \hline
+    \textbf{Préconditions:} & Le robot est en état de marche. \\ \hline
+    \textbf{Postconditions:} &  Aucune \\ \hline
+    \textbf{Scénario principal:} & \begin{enumerate}
+	\item L'opérateur peut visualiser l'information concernant l'état du système
+	\begin{enumerate}
+ 	\item L'opérateur peut visualiser la position du robot sur la station de base.
+    	\item L'opérateur peut visualiser le chemin que le système a calculé pour le robot.
+    	\item L'opérateur peut visualiser le voltage qui passe dans l'électroaimant qui charge le condensateur.
+	\item L'opérateur peut visualiser la lettre transmise au robot par la station de recharge par code Manchester.
+	\item L'opérateur peut visualiser la forme ou la couleur de l'île sur laquelle le robot doit aller déposer le trésor.
+    	\end{enumerate}
+    \end{enumerate}  \\ \hline
+    \textbf{Extensions:} &
+    Infomation indisponible:
+    \begin{enumerate}
+      \item Aucune valeure n'est affichée
+    \end{enumerate}
+    Erreur lors de l'aquisition des donnée:
+    \begin{enumerate}
+      \item Un message d'erreur est affiché
+    \end{enumerate}\\ \hline
+    \textbf{Interrogations:} & Aucune \\ \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | p{4cm} | p{11cm}| }
+    \hline
+   \textbf{Cas d'utilisation:} & Démarrer l'exécution du programme  \\ \hline
+   \textbf{Système:}  & Pirate des Caraïbes: Équipe 2 \\ \hline
+   \textbf{Acteur(s):} & Opérateur \\ \hline
+    \textbf{Parties prenantes et intérêts:} & Opérateur: Il doit être en mesure de démarrer l'exécution du programme.  \\ \hline
+    \textbf{Préconditions:} & Le robot est en état de marche. Le robot, les iles et les trésors sont positionnés sur la table.\\ \hline
+    \textbf{Postconditions:} &  Le robot a démarré l'éxécution de son programme, ce qui est confirmé par la réception d'une confirmation du robot. \\ \hline
+    \textbf{Scénario principal:} &  \begin{enumerate}
+    	\item L'opérateur envoie la commande de démarrage.
+    	\item Le robot reçoit cette commande.
+    	\item Le robot envoie une confirmation de démarrage à la station de base et démarre l'exécution de son programme.
+    \end{enumerate}  \\ \hline
+    \textbf{Extensions:}  &
+    Une commande invalide est envoyée:
+    \begin{enumerate} \setcounter{enumi}{1}
+      \item Le robot reçoit une commande invalide.
+      \item Le robot envoie une erreur à la station de base.
+    \end{enumerate}\\ \hline
+    \textbf{Interrogations:} & Aucune \\ \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | p{4cm} | p{11cm}| }
+    \hline
+   \textbf{Cas d'utilisation:} & Repérer sa position sur l'espace de jeu  \\ \hline
+   \textbf{Système:}  & Pirate des Caraïbes: Équipe 2\\ \hline
+   \textbf{Acteur(s):} & Robot, station de base \\ \hline
+    \textbf{Parties prenantes et intérêts:} & Robot: Il doit être en mesure de se repérer afin de déterminer les déplacements nécessaires pour se rendre à la prochaine étape de son processus.  \\ \hline
+    \textbf{Préconditions:} & Aucune. \\ \hline
+    \textbf{Postconditions:} & Le robot connait sa position et celle-ci est affichée sur la station de base. \\ \hline
+    \textbf{Scénario principal:} &  \begin{enumerate}
+ 	\item Le robot reste immobile et la caméra \textit{World} prend une photo de la surface de jeu.
+    	\item La station de base traite la photo afin de repérer le robot à l'aide des éléments distinctifs de celui-ci.
+    	\item La station de base envoie au robot sa position et affiche à l'écran de la station de base sa position.
+    \end{enumerate}  \\ \hline
+    \textbf{Extensions:} & 
+    Le robot n'est pas repréré lors du traitement de la photo et le robot a besoin de connaitre sa position:
+    \begin{enumerate} \setcounter{enumi}{1}
+      \item Le station de base n'arrive pas a repérer le robot lors du traitement de la photo
+      \item Le station de base informe le robot de son non repérage.
+      \item Le robot effectue un mouvement alléatoire sur la table.
+      \item Recommance à l'étape 1 jusqu'à la localisation du robot
+    \end{enumerate} 
+    Le robot n'est pas repréré lors du traitement de la photo et le robot a un suffisament bon estimé de sa position pour continuer en navigation à l'aveugle:
+    \begin{enumerate} \setcounter{enumi}{1}
+      \item Le station de base n'arrive pas a repérer le robot lors du traitement de la photo
+      \item Le station de base informe le robot de son non repérage.
+      \item Le robot robot poursuit son activité en navigation à l'aveugle.
+    \end{enumerate} \\ \hline
+    \textbf{Interrogations:} & Aucune. \\ \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | p{4cm} | p{11cm}| }
+    \hline
+   \textbf{Cas d'utilisation:} & Repérer les îles.  \\ \hline
+   \textbf{Système:}  & Pirate des Caraïbes: Équipe 2 \\ \hline
+   \textbf{Acteur(s):} & Robot, station de base \\ \hline
+    \textbf{Parties prenantes et intérêts:} & Robot: Il doit connaître la position des îles afin de les considérer lors du calcul de sa trajectoire. Il doit aussi connaître la description de celles-ci afin de connaître la position de sa destination. \\ \hline
+    \textbf{Préconditions:} & Aucune.  \\ \hline
+    \textbf{Postconditions:} &  Le robot connait la position des îles ainsi que leur description et ces informations son affichées sur la station de base. \\ \hline
+    \textbf{Scénario principal:} &  \begin{enumerate}
+ 	\item Le robot reste immobile et la caméra \textit{World} prend une photo de la surface de jeu.
+    	\item La station de base traite la photo afin de repérer les îles.
+    	\item La station de base envoie au robot la position et la description des iles
+    	\item La station de base affiche les informations sur la position et la description des iles.
+    \end{enumerate}  \\ \hline
+    \textbf{Extensions:} &  Aucune. \\ \hline
+    \textbf{Interrogations:} &  Aucune. \\ \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | p{4cm} | p{11cm}| }
+    \hline
+   \textbf{Cas d'utilisation:} & Repérer les trésors.  \\ \hline
+   \textbf{Système:}  & Pirate des Caraïbes: Équipe 2 \\ \hline
+   \textbf{Acteur(s):} & Robot, station de base.  \\ \hline
+    \textbf{Parties prenantes et intérêts:} & Robot: Il doit connaître la position d'au moins un trésor accessible afin d'aller le chercher et le prendre pour le déposer sur une île. \\ \hline
+    \textbf{Préconditions:} & Le robot connait sa position sur la table.  \\ \hline
+    \textbf{Postconditions:} &  Le robot connait la position d'au moins un trésor accessible. \\ \hline
+    \textbf{Scénario principal:} &  \begin{enumerate}
+ 	\item Le robot tourne sa caméra embarquée afin de numériser le mur en entier.
+    	\item Le robot traite les images afin de trouver un trésor.
+    	\item Le robot tourne dans la direction du trésor et envoie à la station de base la commande pour trouver sa position exacte.
+    	\item À l'aide de l'angle formé par le robot et le mur, la station de base envoie au robot la position du trésor.  	
+    \end{enumerate}  \\ \hline
+    \textbf{Extensions:} & 
+    Le robot ne trouve pas de trésor:
+    \begin{enumerate} \setcounter{enumi}{2}
+	\item Le robot effectue un mouvement aléatoire
+	\item Recommencer à l'étape 1 jusqu'à ce qu'un trésor soit trouvé
+    \end{enumerate} \\ \hline
+    \textbf{Interrogations:} & Aucune. \\ \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | p{4cm} | p{11cm}| }
+    \hline
+   \textbf{Cas d'utilisation:} & Calculer un chemin.  \\ \hline
+   \textbf{Système:}  &  Pirate des Caraïbes: Équipe 2 \\ \hline
+   \textbf{Acteur(s):} & Robot \\ \hline
+    \textbf{Parties prenantes et intérêts:} & Robot: Il doit être en mesure de calculer un chemin rapide pour atteindre chaque étape de son processus. \\ \hline
+    \textbf{Préconditions:} & Le robot connait sa position et la position des îles et trésors. \\ \hline
+    \textbf{Postconditions:} &  Le robot a calculé un chemin et celui-ci est affiché sur la station de base. \\ \hline
+    \textbf{Scénario principal:} &  \begin{enumerate}
+ 	\item Le robot détermine sa destination.
+    	\item Le robot calcule un chemin entre sa position actuelle et sa destination, en utilisant un algorithme qui considère la position des îles ainsi que le temps de déplacement.
+    	\item Le robot envoie sa trajectoire prévue à la station de base qui l'affiche.
+    \end{enumerate}  \\ \hline
+    \textbf{Extensions:} &  Aucune. \\ \hline
+    \textbf{Interrogations:} &  Quel algorithme sera utilisé pour calculer un chemin rapide?\\ \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | p{4cm} | p{11cm}| }
+    \hline
+   \textbf{Cas d'utilisation:} & Déplacer le robot.  \\ \hline
+   \textbf{Système:}  &  Pirate des Caraïbes: Équipe 2 \\ \hline
+   \textbf{Acteur(s):} &  Robot \\ \hline
+    \textbf{Parties prenantes et intérêts:} & Robot: Il doit être en mesure de se déplacer en suivant la trajectoire qu'il a calculé.  \\ \hline
+    \textbf{Préconditions:} & Le robot a une trajectoire calculée.\\ \hline
+    \textbf{Postconditions:} & Aucune. \\ \hline
+    \textbf{Scénario principal:} &  \begin{enumerate}
+ 	\item Le robot analyse sa trajectoire et détermine un mouvement à effectuer.
+    	\item Le mouvement à effectuer est envoyé à un microcontrôleur qui ajuste les moteurs et roues pour se déplacer.
+    	\item Le robot vérifie sa position pour confirmer que le mouvement s'est bien effectué.
+    	\item le robot corrige sa trajectoire si nécessaire
+    	\item Le robot recommance à l'étape 1 tant que sa destination finale n'a pas été atteinte.
+    \end{enumerate}  \\ \hline
+    \textbf{Extensions:} &  Aucune. \\ \hline
+    \textbf{Interrogations:} & Le mouvement à effectuer envoyé sera-t-il uniquement une coordonnée en x et y? \\ \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | p{4cm} | p{11cm}| }
+    \hline
+   \textbf{Cas d'utilisation:} & Déterminer son objectif  \\ \hline
+   \textbf{Système:}  &  Pirate des Caraïbes: Équipe 2 \\ \hline
+   \textbf{Acteur(s):} & Robot, station de base et station de recharge \\ \hline
+    \textbf{Parties prenantes et intérêts:} & Robot: Il doit connaître la lettre codée par la station de recharge afin de connaître l'île destination. \\ \hline
+    \textbf{Préconditions:} &  Le robot est en mesure de communiquer avec la station de recharge. \\ \hline
+    \textbf{Postconditions:} &  Le robot connaît la description de l'île de destination. \\ \hline
+    \textbf{Scénario principal:} &  \begin{enumerate}
+	\item Le robot trouve la station de recharge à l'aide de sa caméra.
+    	\item Le robot détermine la trajectoire à prendre (calculer un chemin).
+    	\item Le robot effectue le déplacement (déplacer le robot) jusqu'à la station de recharge.
+    	\item La station de recharge envoie un code Manchester correspondant à la lettre code de description de l'île.
+    	\item Le robot décode le code Manchester pour retrouver une lettre.
+    	\begin{enumerate}
+	    \item Le robot transforme les bits en nombre de 0 à 127.
+	    \item Le robot trouve le caractère ASCII correspondant à ce nombre.
+    	\end{enumerate}
+    	\item Le robot envoie cette lettre à la station de base
+    	\item La station de base affiche la lettre 
+    	\item La station de base envoie une requête utilisant la lettre au serveur de description de forme.
+    	\item La station de base envoie la réponse du serveur en JSON au robot
+    	\item La station de base affiche la réponse correspondant à la description d'une île.
+    \end{enumerate}  \\ \hline
+    \textbf{Extensions:} &  Aucune. \\ \hline
+    \textbf{Interrogations:} & Quel sera le mode de communication du robot et de la station de recharge?  \\ \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | p{4cm} | p{11cm}| }
+    \hline
+   \textbf{Cas d'utilisation:} & Charger le condensateur. \\ \hline
+   \textbf{Système:}  &  Pirate des Caraïbes: Équipe 2 \\ \hline
+   \textbf{Acteur(s):} &  Robot, Station de base\\ \hline
+    \textbf{Parties prenantes et intérêts:} &  Robot: Il doit être en mesure de recharger son condensateur et de se mettre en position pour recevoir code secret.\\ \hline
+    \textbf{Préconditions:} & Le robot est positionné près de la station de recharge (en mesure de la trouver avec sa caméra et accessible selon un chemin direct). \\ \hline
+    \textbf{Postconditions:} &  Le condensateur est rechargé.\\ \hline
+    \textbf{Scénario principal:} &  \begin{enumerate}
+ 	\item Le robot trouve la station de recharge à l'aide de sa caméra.
+    	\item Le robot détermine la trajectoire à prendre (calculer un chemin).
+    	\item Le robot effectue le déplacement (déplacer le robot) jusqu'à la station de recharge.
+    	\item Le robot se positione avec des ajustement fin, pour charger le condensateur
+    	\item Le robot charge le condensateur par induction
+    	\begin{enumerate}
+	    \item Le robot reste en position 
+	    \item Le robot affiche l'état de charge du condensateur.
+	    \item Le robot envoie des mises à jour de l'état de charge du condensateur à la sation de base.
+    	\end{enumerate}
+    \end{enumerate}  \\ \hline
+    \textbf{Extensions:} & Aucune. \\ \hline
+    \textbf{Interrogations:} & Aucune. \\ \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | p{4cm} | p{11cm}| }
+    \hline
+   \textbf{Cas d'utilisation:} & Déplacer un trésor jusqu'à l'île de destination  \\ \hline
+   \textbf{Système:}  &  Pirate des Caraïbes: Équipe 2 \\ \hline
+   \textbf{Acteur(s):} &  Robot \\ \hline
+    \textbf{Parties prenantes et intérêts:} &  Robot: Il doit être en mesure de déplacer le trésor afin de compléter son objectif final. \\ \hline
+    \textbf{Préconditions:} &  Le robot connaît sa position, la position des îles et la position de son île destination. Le robot est près d'un trésor (en mesure de le trouver avec sa caméra et accessible selon un chemin direct). \\ \hline
+    \textbf{Postconditions:} & Le trésor est déposé sur l'île et programme est complété. \\ \hline
+    \textbf{Scénario principal:} &  \begin{enumerate}
+ 	\item Le robot trouve les trésors (Repérer les trésors).
+ 	\item Le robot trouve une chemin jusqu'au trésor (Calculer un chemin).
+    	\item Le robot se déplace vers le trésor (Déplacer le robot).
+    	\item Le robot effectue un positionnement fin pour pouvoir prendre le trésor avec l'électroaimant du préhenseur.
+    	\item Le robot prend le trésor et le soulève.
+    	\item Le robot calcule le chemin vers l'île destination (Calculer un chemin).
+    	\item Le robot se déplace jusqu'à l'île (Déplacer le robot) en soulevant le trésor.
+    	\item Le robot se positionne afin que le trésor puisse être déposer sur l'île
+    	\item Le robot dépose le trésor sur l'ile.
+    \end{enumerate}  \\ \hline
+    \textbf{Extensions:} & Aucune \\ \hline
+    \textbf{Interrogations:} & Aucune.  \\ \hline
+    \end{tabular}
+\end{center}

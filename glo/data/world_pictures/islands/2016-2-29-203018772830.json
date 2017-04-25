@@ -1,0 +1,216 @@
+{
+  "from_list": [
+    {
+      "descriptor_points": [
+        {
+          "x": 275,
+          "y": 353
+        },
+        {
+          "x": 327,
+          "y": 353
+        }
+      ],
+      "form_color": "Rouge",
+      "form_descriptor_point_amount": 2,
+      "form_type": "Cercle"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 695,
+          "y": 368
+        },
+        {
+          "x": 734,
+          "y": 407
+        },
+        {
+          "x": 684,
+          "y": 420
+        }
+      ],
+      "form_color": "Vert",
+      "form_descriptor_point_amount": 3,
+      "form_type": "Triangle"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 829,
+          "y": 457
+        },
+        {
+          "x": 846,
+          "y": 510
+        },
+        {
+          "x": 791,
+          "y": 496
+        }
+      ],
+      "form_color": "Rouge",
+      "form_descriptor_point_amount": 3,
+      "form_type": "Triangle"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 541,
+          "y": 428
+        },
+        {
+          "x": 556,
+          "y": 459
+        },
+        {
+          "x": 533,
+          "y": 481
+        },
+        {
+          "x": 503,
+          "y": 466
+        },
+        {
+          "x": 508,
+          "y": 434
+        }
+      ],
+      "form_color": "Jaune",
+      "form_descriptor_point_amount": 5,
+      "form_type": "Pentagone"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 589,
+          "y": 341
+        },
+        {
+          "x": 577,
+          "y": 302
+        },
+        {
+          "x": 616,
+          "y": 288
+        },
+        {
+          "x": 629,
+          "y": 328
+        }
+      ],
+      "form_color": "Jaune",
+      "form_descriptor_point_amount": 4,
+      "form_type": "Carre"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 840,
+          "y": 357
+        },
+        {
+          "x": 890,
+          "y": 359
+        }
+      ],
+      "form_color": "Jaune",
+      "form_descriptor_point_amount": 2,
+      "form_type": "Cercle"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 489,
+          "y": 366
+        },
+        {
+          "x": 539,
+          "y": 366
+        }
+      ],
+      "form_color": "Bleu",
+      "form_descriptor_point_amount": 2,
+      "form_type": "Cercle"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 359,
+          "y": 449
+        },
+        {
+          "x": 390,
+          "y": 445
+        },
+        {
+          "x": 406,
+          "y": 473
+        },
+        {
+          "x": 385,
+          "y": 496
+        },
+        {
+          "x": 355,
+          "y": 481
+        }
+      ],
+      "form_color": "Rouge",
+      "form_descriptor_point_amount": 5,
+      "form_type": "Pentagone"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 558,
+          "y": 506
+        },
+        {
+          "x": 591,
+          "y": 532
+        },
+        {
+          "x": 567,
+          "y": 565
+        },
+        {
+          "x": 533,
+          "y": 537
+        }
+      ],
+      "form_color": "Rouge",
+      "form_descriptor_point_amount": 4,
+      "form_type": "Carre"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 751,
+          "y": 242
+        },
+        {
+          "x": 741,
+          "y": 210
+        },
+        {
+          "x": 767,
+          "y": 192
+        },
+        {
+          "x": 796,
+          "y": 213
+        },
+        {
+          "x": 785,
+          "y": 241
+        }
+      ],
+      "form_color": "Bleu",
+      "form_descriptor_point_amount": 5,
+      "form_type": "Pentagone"
+    }
+  ],
+  "robot_orientation": null,
+  "robot_position": null
+}

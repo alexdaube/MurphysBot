@@ -1,0 +1,6 @@
+#dot positions are relative to the center dot | unit is [mm]
+center:
+  x: 0
+  y: 0
+  r: 1000
+  color: green

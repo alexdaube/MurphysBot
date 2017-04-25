@@ -1,0 +1,52 @@
+{
+  "from_list": [
+    {
+      "descriptor_points": [
+        {
+          "x": 482,
+          "y": 327
+        },
+        {
+          "x": 486,
+          "y": 307
+        },
+        {
+          "x": 466,
+          "y": 298
+        },
+        {
+          "x": 460,
+          "y": 318
+        }
+      ],
+      "form_color": "Jaune",
+      "form_descriptor_point_amount": 4,
+      "form_type": "Carre"
+    },
+    {
+      "descriptor_points": [
+        {
+          "x": 322,
+          "y": 233
+        },
+        {
+          "x": 322,
+          "y": 219
+        },
+        {
+          "x": 310,
+          "y": 213
+        },
+        {
+          "x": 309,
+          "y": 226
+        }
+      ],
+      "form_color": "Jaune",
+      "form_descriptor_point_amount": 4,
+      "form_type": "Carre"
+    }
+  ],
+  "robot_orientation": null,
+  "robot_position": null
+}

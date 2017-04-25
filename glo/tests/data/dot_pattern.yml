@@ -1,0 +1,16 @@
+#dot positions are relative to the center dot | unit is [mm]
+center:
+  x: 0
+  y: 0
+  r: 60
+  color: magenta
+bottom_left:
+  x: -76
+  y: 122
+  r: 50
+  color: blue
+bottom_right:
+  x: 76
+  y: 122
+  r: 50
+  color: orange

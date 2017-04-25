@@ -1,0 +1,124 @@
+{
+  "from_list": [
+    {
+      "descriptor_points": [
+        {
+          "x": 713, 
+          "y": 383
+        }, 
+        {
+          "x": 725, 
+          "y": 473
+        }, 
+        {
+          "x": 798, 
+          "y": 416
+        }
+      ], 
+      "form_color": "Vert", 
+      "form_descriptor_point_amount": 3, 
+      "form_type": "Triangle"
+    }, 
+    {
+      "descriptor_points": [
+        {
+          "x": 860, 
+          "y": 600
+        }, 
+        {
+          "x": 883, 
+          "y": 513
+        }, 
+        {
+          "x": 947, 
+          "y": 577
+        }
+      ], 
+      "form_color": "Rouge", 
+      "form_descriptor_point_amount": 3, 
+      "form_type": "Triangle"
+    }, 
+    {
+      "descriptor_points": [
+        {
+          "x": 701, 
+          "y": 801
+        }, 
+        {
+          "x": 783, 
+          "y": 801
+        }
+      ], 
+      "form_color": "Vert", 
+      "form_descriptor_point_amount": 2, 
+      "form_type": "Cercle"
+    }, 
+    {
+      "descriptor_points": [
+        {
+          "x": 992, 
+          "y": 742
+        }, 
+        {
+          "x": 935, 
+          "y": 783
+        }, 
+        {
+          "x": 975, 
+          "y": 841
+        }, 
+        {
+          "x": 1033, 
+          "y": 802
+        }
+      ], 
+      "form_color": "Jaune", 
+      "form_descriptor_point_amount": 4, 
+      "form_type": "Carre"
+    }, 
+    {
+      "descriptor_points": [
+        {
+          "x": 1099, 
+          "y": 727
+        }, 
+        {
+          "x": 1104, 
+          "y": 677
+        }, 
+        {
+          "x": 1157, 
+          "y": 663
+        }, 
+        {
+          "x": 1184, 
+          "y": 709
+        }, 
+        {
+          "x": 1150, 
+          "y": 749
+        }
+      ], 
+      "form_color": "Bleu", 
+      "form_descriptor_point_amount": 5, 
+      "form_type": "Pentagone"
+    }, 
+    {
+      "descriptor_points": [
+        {
+          "x": 1161, 
+          "y": 464
+        }, 
+        {
+          "x": 1245, 
+          "y": 465
+        }
+      ], 
+      "form_color": "Bleu", 
+      "form_descriptor_point_amount": 2, 
+      "form_type": "Cercle"
+    }
+  ], 
+  "robot_orientation": null, 
+  "robot_position": null
+}
